@@ -1,10 +1,13 @@
 import "./App.css"
+import Navbar from "./components/navbar/Navbar"
 
 function App() {
 
   return (
     <>
-      merhaba bu bir react projesidir
+      <div className="app">
+        <Navbar/>
+      </div>
     </>
   )
 }
