@@ -3,6 +3,7 @@ import { FaHeart } from 'react-icons/fa'
 import { PiFilmReelFill } from 'react-icons/pi'
 import { TiHome } from 'react-icons/ti'
 import "./Navbar.css"
+import { Link } from 'react-router-dom'
 
 const Navbar = () => {
   return (
@@ -10,7 +11,9 @@ const Navbar = () => {
       <nav className='navbar'>
         {/**left Logo area */}
         <div className='left'>
-          <a href='#'>MovieApp</a>
+          <Link to="/">
+            <h1>MovieApp</h1>
+          </Link>
         </div>
         {/**Center */}
         <div className='center'>
@@ -19,8 +22,16 @@ const Navbar = () => {
         {/**Right icons */}
         <div className='right'>
           <ul>
-            <li><TiHome/></li>
-            <li><FaHeart/></li>
+            <li>
+              <Link to="/">
+                <TiHome/>
+              </Link>
+            </li>
+            <li>
+              <Link to="/my-list">
+                <FaHeart/>
+              </Link>
+            </li>
           </ul>
         </div>
       </nav>

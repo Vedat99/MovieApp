@@ -1,0 +1,29 @@
+.genres {
+    height: 30px;
+    padding: 5px 30px;
+    display: flex;
+    align-items: center;
+    color: #dedede;
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+}
+
+.genres ul {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.genres ul li {
+    cursor: pointer;
+    font-size: 13px;
+    transition: all .3s;
+    padding:0 10px;
+}
+
+.genres ul li:hover {
+    transform: scale(1.3);
+    color: #ffcc00;
+}
